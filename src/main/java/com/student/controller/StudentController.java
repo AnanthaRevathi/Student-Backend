@@ -43,7 +43,7 @@ public class StudentController {
 		List<Student> students = studentRepository.findAll();
 		return ResponseEntity.ok(students);
 	}
-	@CrossOrigin(origins = "http://localhost:3002") 
+	@CrossOrigin(origins = "http://localhost:3001") 
     @PostMapping("/update-data")
     public ResponseEntity<List<Student>> updateStudents(@RequestBody List<Student> students) {
         List<Student> updatedStudents = new ArrayList<>();
